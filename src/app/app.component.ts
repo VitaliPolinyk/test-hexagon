@@ -48,10 +48,8 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    this.getHexagons();
-    // this.map.data.loadGeoJson('https://storage.googleapis.com/maps-devrel/google.json',{idPropertyName:'asdf'});
-    this.map.data.loadGeoJson('data.json');
-    // this.map.data.loadGeoJson('http://localhost:4200/data.json',{idPropertyName:'asdf'});
+    this.map.data.loadGeoJson('https://storage.googleapis.com/maps-devrel/google.json',{idPropertyName:'asdf'});
+    // this.map.data.loadGeoJson('data.json');
   }
 
   getMarkers() {
