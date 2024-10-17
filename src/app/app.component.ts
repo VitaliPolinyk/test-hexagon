@@ -33,8 +33,8 @@ export class AppComponent implements AfterViewInit {
   @ViewChild(GoogleMap, { static: false }) map!: GoogleMap;
 
   branches = signal<any[]>([]);
-  center: google.maps.LatLngLiteral = { lat: 46.8182, lng: 8.2275 };
-  zoom = 8;
+  center: google.maps.LatLngLiteral = { lat: -27.977035, lng: 135.438495 };
+  zoom = 5;
   markers: IMapMarker[] = [];
 
   constructor(private hexagonService: HexagonService) {
