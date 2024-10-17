@@ -1,0 +1,14 @@
+<google-map [center]="center" [zoom]="zoom" height="98vh" width="100%">
+  <map-marker
+    *ngFor="let marker of markers"
+    #mapMarker="mapMarker"
+    [position]="marker.position"
+    [label]="marker.label"
+    [title]="marker.title"
+    [options]="marker.options"
+    (mapClick)="openInfoWindow(marker.branch, mapMarker)"
+  ></map-marker>
+  <map-info-window>
+    // Define HTML for the Map Markers
+  </map-info-window>
+</google-map>
